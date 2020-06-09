@@ -13,7 +13,8 @@ module Activerecord
     )
       Concurrent::TimerTask.execute(
         execution_interval: execution_interval,
-        timeout_interval: execution_timeout
+        timeout_interval: execution_timeout,
+        run_now: true
       ) do
         # ActiveRecord::Base.connection_pool.stat returns
         # { size: 15, connections: 1, busy: 1, dead: 0, idle: 0, waiting: 0, checkout_timeout: 5 }

@@ -15,5 +15,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'activerecord'
   spec.add_dependency 'concurrent-ruby', '~> 1.1'
+
+  spec.add_development_dependency 'rspec', '~> 3.9'
+  spec.add_development_dependency 'statsd-ruby', '~> 1.4'
+  spec.add_development_dependency 'sqlite3', '~> 1.4'
 end
