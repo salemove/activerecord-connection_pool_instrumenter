@@ -1,4 +1,4 @@
-# Activerecord::ConnectionPoolInstrumenter
+# ActiveRecord::ConnectionPoolInstrumenter
 
 ## Installation
 
@@ -15,8 +15,8 @@ And then execute `bundle install`
 Include in your application:
 
 ```
-require 'activerecord/connection_pool_instrumenter'
-Activerecord::ConnectionPoolInstrumenter.instrument(statsd: statsd, prefix: 'your_app.db.connection_pool')
+require 'active_record/connection_pool_instrumenter'
+ActiveRecord::ConnectionPoolInstrumenter.instrument(statsd: statsd, prefix: 'your_app.db.connection_pool')
 ```
 
 ## Development

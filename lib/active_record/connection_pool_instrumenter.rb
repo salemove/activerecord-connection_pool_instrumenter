@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'activerecord/connection_pool_instrumenter/version'
+require 'active_record/connection_pool_instrumenter/version'
 
-module Activerecord
+module ActiveRecord
   module ConnectionPoolInstrumenter
     def self.instrument(
       statsd:,

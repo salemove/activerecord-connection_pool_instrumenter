@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require 'active_record'
+require 'active_record/connection_pool_instrumenter'
 require 'statsd'
-require 'activerecord/connection_pool_instrumenter'
 
-RSpec.describe Activerecord::ConnectionPoolInstrumenter do
+RSpec.describe ActiveRecord::ConnectionPoolInstrumenter do
   let(:prefix) { 'db.test.pool' }
   let(:connection_pool) { ActiveRecord::Base.connection_pool }
   let(:statsd) { instance_spy(Statsd) }
