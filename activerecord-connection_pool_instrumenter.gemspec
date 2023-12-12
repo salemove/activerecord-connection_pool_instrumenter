@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name     = 'activerecord-connection_pool_instrumenter'
   spec.version  = ActiveRecord::ConnectionPoolInstrumenter::VERSION
   spec.authors  = ['Glia TechMovers']
-  spec.email    = ['techmovers@glia.com']
+  spec.email    = ['open-source@glia.com']
   spec.summary  = 'Metrics about the activerecord connection pool usage'
   spec.homepage = 'https://github.com/salemove/activerecord-connection_pool_instrumenter'
 
